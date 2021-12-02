@@ -1,0 +1,3 @@
+/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/cmake-build-debug/CMakeFiles/edit_cache.dir
+/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/cmake-build-debug/CMakeFiles/Procedural.dir
