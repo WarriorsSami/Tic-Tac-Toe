@@ -15,22 +15,22 @@
 
 #define BOARD_SIZE 3
 
-#define CELL_WIDTH SCREEN_WIDTH / BOARD_SIZE
-#define CELL_HEIGHT SCREEN_HEIGHT / BOARD_SIZE
+#define CELL_WIDTH (SCREEN_WIDTH / (float) BOARD_SIZE)
+#define CELL_HEIGHT (SCREEN_HEIGHT / (float) BOARD_SIZE)
 
-enum Player_State {
+typedef enum {
     PLAYER_EMPTY,
     PLAYER_X,
     PLAYER_O
-};
+} Player_State;
 
-enum Game_State {
+typedef enum {
     GAME_RUNNING,
     GAME_X_WIN,
     GAME_O_WIN,
     GAME_TIE,
     GAME_QUIT
-};
+} Game_State;
 
 typedef struct {
     int **board;
@@ -38,7 +38,7 @@ typedef struct {
     int state;
 } game_t;
 
-game_t* game_init();
+game_t* game_init_empty();
 
 void game_free(game_t *game);
 

@@ -39,9 +39,9 @@ void render_x(SDL_Renderer *renderer,
               const int column,
               const SDL_Color *color) {
 
-    const double offset = fmin((double)CELL_WIDTH, (double)CELL_HEIGHT) * 0.25;
-    const double x_center = (double)column * CELL_WIDTH + (double)CELL_WIDTH * 0.5;
-    const double y_center = (double)row * CELL_HEIGHT + (double)CELL_HEIGHT * 0.5;
+    const float offset = fminf(CELL_WIDTH, CELL_HEIGHT) * 0.25;
+    const float x_center = column * CELL_WIDTH + CELL_WIDTH * 0.5;
+    const float y_center = row * CELL_HEIGHT + CELL_HEIGHT * 0.5;
 
     thickLineRGBA(renderer,
                   x_center - offset, y_center - offset,
@@ -61,9 +61,9 @@ void render_o(SDL_Renderer *renderer,
               const int column,
               const SDL_Color *color) {
 
-    const double offset = fmin((double)CELL_WIDTH, (double)CELL_HEIGHT) * 0.3;
-    const double x_center = (double)column * CELL_WIDTH + (double)CELL_WIDTH * 0.5;
-    const double y_center = (double)row * CELL_HEIGHT + (double)CELL_HEIGHT * 0.5;
+    const float offset = fminf(CELL_WIDTH, CELL_HEIGHT) * 0.3;
+    const float x_center = column * CELL_WIDTH + CELL_WIDTH * 0.5;
+    const float y_center = row * CELL_HEIGHT + CELL_HEIGHT * 0.5;
 
     filledCircleRGBA(renderer,
                      x_center, y_center,
@@ -85,10 +85,10 @@ void render_board(SDL_Renderer *renderer,
         for (int j = 0; j < BOARD_SIZE; j++) {
             switch (board[i][j]) {
                 case PLAYER_X:
-                    render_x(renderer, i, j, player_x_color);
+                    render_x(renderer, j, i, player_x_color);
                     break;
                 case PLAYER_O:
-                    render_o(renderer, i, j, player_o_color);
+                    render_o(renderer, j, i, player_o_color);
                     break;
                 default: {}
             }

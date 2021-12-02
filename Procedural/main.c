@@ -38,11 +38,11 @@ int main(int argc, char *argv[]) {
     }
 
     // instantiate an instance of the game (empty board)
-    game_t *game = game_init();
+    game_t *game = game_init_empty();
 
     // check if game was created
     if (game == NULL) {
-        fprintf(stderr, "game_init Error\n");
+        fprintf(stderr, "game_init_empty Error\n");
         return EXIT_FAILURE;
     }
 
@@ -51,7 +51,6 @@ int main(int argc, char *argv[]) {
     while (game->state != GAME_QUIT) {
         // check for events
         while (SDL_PollEvent(&event)) {
-            // check for quit event
             switch(event.type) {
                 case SDL_QUIT:
                     game->state = GAME_QUIT;
@@ -61,9 +60,7 @@ int main(int argc, char *argv[]) {
                                 event.button.x / CELL_WIDTH,
                                 event.button.y / CELL_HEIGHT);
                     break;
-                default: {
-
-                }
+                default: {}
             }
         }
 

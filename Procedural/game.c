@@ -4,7 +4,7 @@
 
 #include "game.h"
 
-game_t* game_init() {
+game_t* game_init_empty() {
     game_t *game = (game_t*)malloc(sizeof(game_t));
 
     game->board = (int **)malloc(sizeof(int) * BOARD_SIZE);
@@ -14,6 +14,8 @@ game_t* game_init() {
             game->board[i][j] = PLAYER_EMPTY;
         }
     }
+    // game->board[1][0] = PLAYER_X;
+    // game->board[1][1] = PLAYER_O;
     game->current_player = PLAYER_X;
     game->state = GAME_RUNNING;
 
