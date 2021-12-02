@@ -3,4 +3,7 @@ project(Procedural C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(Procedural main.c)
+set(SOURCE_FILES main.c)
+add_executable(Procedural ${SOURCE_FILES} game.h render.c logic.c game.c)
+
+target_link_libraries(Procedural SDL2main SDL2)

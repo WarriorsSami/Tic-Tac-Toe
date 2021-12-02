@@ -76,7 +76,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/game.c">
+			<Option target="Procedural"/>
+		</Unit>
+		<Unit filename="/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/game.h">
+			<Option target="Procedural"/>
+		</Unit>
+		<Unit filename="/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/logic.c">
+			<Option target="Procedural"/>
+		</Unit>
 		<Unit filename="/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/main.c">
+			<Option target="Procedural"/>
+		</Unit>
+		<Unit filename="/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/render.c">
 			<Option target="Procedural"/>
 		</Unit>
 		<Unit filename="/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/CMakeLists.txt">

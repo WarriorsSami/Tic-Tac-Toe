@@ -8,7 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/game.c" "/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/cmake-build-debug/CMakeFiles/Procedural.dir/game.c.o"
+  "/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/logic.c" "/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/cmake-build-debug/CMakeFiles/Procedural.dir/logic.c.o"
   "/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/main.c" "/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/cmake-build-debug/CMakeFiles/Procedural.dir/main.c.o"
+  "/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/render.c" "/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/cmake-build-debug/CMakeFiles/Procedural.dir/render.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

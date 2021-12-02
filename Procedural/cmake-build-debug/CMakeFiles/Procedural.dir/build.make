@@ -79,17 +79,62 @@ CMakeFiles/Procedural.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Procedural.dir/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/main.c" -o CMakeFiles/Procedural.dir/main.c.s
 
+CMakeFiles/Procedural.dir/render.c.o: CMakeFiles/Procedural.dir/flags.make
+CMakeFiles/Procedural.dir/render.c.o: ../render.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Procedural.dir/render.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Procedural.dir/render.c.o -c "/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/render.c"
+
+CMakeFiles/Procedural.dir/render.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Procedural.dir/render.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/render.c" > CMakeFiles/Procedural.dir/render.c.i
+
+CMakeFiles/Procedural.dir/render.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Procedural.dir/render.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/render.c" -o CMakeFiles/Procedural.dir/render.c.s
+
+CMakeFiles/Procedural.dir/logic.c.o: CMakeFiles/Procedural.dir/flags.make
+CMakeFiles/Procedural.dir/logic.c.o: ../logic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Procedural.dir/logic.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Procedural.dir/logic.c.o -c "/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/logic.c"
+
+CMakeFiles/Procedural.dir/logic.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Procedural.dir/logic.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/logic.c" > CMakeFiles/Procedural.dir/logic.c.i
+
+CMakeFiles/Procedural.dir/logic.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Procedural.dir/logic.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/logic.c" -o CMakeFiles/Procedural.dir/logic.c.s
+
+CMakeFiles/Procedural.dir/game.c.o: CMakeFiles/Procedural.dir/flags.make
+CMakeFiles/Procedural.dir/game.c.o: ../game.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Procedural.dir/game.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Procedural.dir/game.c.o -c "/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/game.c"
+
+CMakeFiles/Procedural.dir/game.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Procedural.dir/game.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/game.c" > CMakeFiles/Procedural.dir/game.c.i
+
+CMakeFiles/Procedural.dir/game.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Procedural.dir/game.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/game.c" -o CMakeFiles/Procedural.dir/game.c.s
+
 # Object files for target Procedural
 Procedural_OBJECTS = \
-"CMakeFiles/Procedural.dir/main.c.o"
+"CMakeFiles/Procedural.dir/main.c.o" \
+"CMakeFiles/Procedural.dir/render.c.o" \
+"CMakeFiles/Procedural.dir/logic.c.o" \
+"CMakeFiles/Procedural.dir/game.c.o"
 
 # External object files for target Procedural
 Procedural_EXTERNAL_OBJECTS =
 
 Procedural: CMakeFiles/Procedural.dir/main.c.o
+Procedural: CMakeFiles/Procedural.dir/render.c.o
+Procedural: CMakeFiles/Procedural.dir/logic.c.o
+Procedural: CMakeFiles/Procedural.dir/game.c.o
 Procedural: CMakeFiles/Procedural.dir/build.make
 Procedural: CMakeFiles/Procedural.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable Procedural"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable Procedural"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Procedural.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

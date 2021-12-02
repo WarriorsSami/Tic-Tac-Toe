@@ -129,6 +129,54 @@ Procedural/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Procedural.dir/build.make CMakeFiles/Procedural.dir/build
 .PHONY : Procedural/fast
 
+game.o: game.c.o
+.PHONY : game.o
+
+# target to build an object file
+game.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Procedural.dir/build.make CMakeFiles/Procedural.dir/game.c.o
+.PHONY : game.c.o
+
+game.i: game.c.i
+.PHONY : game.i
+
+# target to preprocess a source file
+game.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Procedural.dir/build.make CMakeFiles/Procedural.dir/game.c.i
+.PHONY : game.c.i
+
+game.s: game.c.s
+.PHONY : game.s
+
+# target to generate assembly for a file
+game.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Procedural.dir/build.make CMakeFiles/Procedural.dir/game.c.s
+.PHONY : game.c.s
+
+logic.o: logic.c.o
+.PHONY : logic.o
+
+# target to build an object file
+logic.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Procedural.dir/build.make CMakeFiles/Procedural.dir/logic.c.o
+.PHONY : logic.c.o
+
+logic.i: logic.c.i
+.PHONY : logic.i
+
+# target to preprocess a source file
+logic.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Procedural.dir/build.make CMakeFiles/Procedural.dir/logic.c.i
+.PHONY : logic.c.i
+
+logic.s: logic.c.s
+.PHONY : logic.s
+
+# target to generate assembly for a file
+logic.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Procedural.dir/build.make CMakeFiles/Procedural.dir/logic.c.s
+.PHONY : logic.c.s
+
 main.o: main.c.o
 .PHONY : main.o
 
@@ -153,6 +201,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Procedural.dir/build.make CMakeFiles/Procedural.dir/main.c.s
 .PHONY : main.c.s
 
+render.o: render.c.o
+.PHONY : render.o
+
+# target to build an object file
+render.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Procedural.dir/build.make CMakeFiles/Procedural.dir/render.c.o
+.PHONY : render.c.o
+
+render.i: render.c.i
+.PHONY : render.i
+
+# target to preprocess a source file
+render.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Procedural.dir/build.make CMakeFiles/Procedural.dir/render.c.i
+.PHONY : render.c.i
+
+render.s: render.c.s
+.PHONY : render.s
+
+# target to generate assembly for a file
+render.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Procedural.dir/build.make CMakeFiles/Procedural.dir/render.c.s
+.PHONY : render.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +234,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Procedural"
+	@echo "... game.o"
+	@echo "... game.i"
+	@echo "... game.s"
+	@echo "... logic.o"
+	@echo "... logic.i"
+	@echo "... logic.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... render.o"
+	@echo "... render.i"
+	@echo "... render.s"
 .PHONY : help
 
 
