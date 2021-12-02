@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/Procedural.dir/main.c.o -o Procedural 
