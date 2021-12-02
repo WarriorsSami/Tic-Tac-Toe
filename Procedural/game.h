@@ -5,11 +5,13 @@
 #ifndef PROCEDURAL_GAME_H
 #define PROCEDURAL_GAME_H
 
+#include <SDL2/SDL_render.h>
+
 #define WINDOW_X_POS 100
 #define WINDOW_Y_POS 100
 
-#define SCREEN_WIDTH 640
-#define SCREEN_HEIGHT 480
+#define SCREEN_WIDTH 1200
+#define SCREEN_HEIGHT 800
 
 #define N 3
 
@@ -29,9 +31,13 @@ enum Game_State {
 
 typedef struct {
     int board[N][N];
-    int player;
+    int current_player;
     int state;
 } game_t;
+
+game_t* game_init();
+
+void game_free(game_t *game);
 
 void render_game(SDL_Renderer *renderer, const game_t *game);
 
