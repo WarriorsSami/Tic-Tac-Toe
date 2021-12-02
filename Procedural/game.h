@@ -13,7 +13,10 @@
 #define SCREEN_WIDTH 1200
 #define SCREEN_HEIGHT 800
 
-#define N 3
+#define BOARD_SIZE 3
+
+#define CELL_WIDTH SCREEN_WIDTH / BOARD_SIZE
+#define CELL_HEIGHT SCREEN_HEIGHT / BOARD_SIZE
 
 enum Player_State {
     PLAYER_EMPTY,
@@ -30,7 +33,7 @@ enum Game_State {
 };
 
 typedef struct {
-    int board[N][N];
+    int **board;
     int current_player;
     int state;
 } game_t;

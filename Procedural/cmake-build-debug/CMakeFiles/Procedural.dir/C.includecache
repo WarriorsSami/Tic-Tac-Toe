@@ -6,30 +6,16 @@
 
 #IncludeRegexTransform: 
 
-/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/game.c
-game.h
-/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/game.h
-
 /media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/game.h
 SDL2/SDL_render.h
 -
-
-/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/logic.c
-game.h
-/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/game.h
-
-/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/main.c
-stdio.h
--
-stdlib.h
--
-SDL2/SDL.h
--
-./game.h
-/media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/game.h
 
 /media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/render.c
+math.h
+-
 SDL2/SDL_render.h
+-
+SDL2/SDL2_gfxPrimitives.h
 -
 game.h
 /media/sami/Dev Space/c-projects/Tic-Tac-Toe/Procedural/game.h

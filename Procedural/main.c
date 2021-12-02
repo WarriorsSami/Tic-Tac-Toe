@@ -2,10 +2,7 @@
 #include <stdlib.h>
 
 #include <SDL2/SDL.h>
-#include "./game.h"
-
-const float cell_width = SCREEN_WIDTH / (float) N;
-const float cell_height = SCREEN_HEIGHT / (float) N;
+#include "game.h"
 
 int main(int argc, char *argv[]) {
     // initialize SDL video subsystem
@@ -61,8 +58,8 @@ int main(int argc, char *argv[]) {
                     break;
                 case SDL_MOUSEBUTTONDOWN:
                     update_game(game,
-                                event.button.x / (int) cell_width,
-                                event.button.y / (int) cell_height);
+                                event.button.x / CELL_WIDTH,
+                                event.button.y / CELL_HEIGHT);
                     break;
                 default: {
 

@@ -209,6 +209,24 @@ ProcessorCount_cmd_nproc:FILEPATH=/usr/bin/nproc
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
 
+//The directory containing a CMake configuration file for SDL2.
+SDL2_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/SDL2
+
+//Where the SDL2_gfx headers can be found
+SDL2_GFX_INCLUDE_DIR:PATH=/usr/include/SDL2
+
+//Where the SDL2_gfx Library can be found
+SDL2_GFX_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libSDL2_gfx.so
+
+//Disable search SDL2_gfx Library in default path
+SDL2_GFX_NO_DEFAULT_PATH:BOOL=OFF
+
+//Custom SDL2_gfx Library path
+SDL2_GFX_PATH:STRING=
+
+//The directory containing a CMake configuration file for SDL2_gfx.
+SDL2_gfx_DIR:PATH=SDL2_gfx_DIR-NOTFOUND
+
 
 ########################
 # INTERNAL cache entries
@@ -345,8 +363,18 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding SDL2_gfx
+FIND_PACKAGE_MESSAGE_DETAILS_SDL2_gfx:INTERNAL=[/usr/lib/x86_64-linux-gnu/libSDL2_gfx.so][/usr/include/SDL2][v1.0.4()]
 //ADVANCED property for variable: ProcessorCount_cmd_nproc
 ProcessorCount_cmd_nproc-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl
 ProcessorCount_cmd_sysctl-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: SDL2_GFX_INCLUDE_DIR
+SDL2_GFX_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: SDL2_GFX_LIBRARY
+SDL2_GFX_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: SDL2_GFX_NO_DEFAULT_PATH
+SDL2_GFX_NO_DEFAULT_PATH-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: SDL2_GFX_PATH
+SDL2_GFX_PATH-ADVANCED:INTERNAL=1
 

@@ -1,1 +1,1 @@
-/usr/bin/cc -g CMakeFiles/Procedural.dir/main.c.o CMakeFiles/Procedural.dir/render.c.o CMakeFiles/Procedural.dir/logic.c.o CMakeFiles/Procedural.dir/game.c.o -o Procedural  -lSDL2main -lSDL2 
+/usr/bin/cc -g CMakeFiles/Procedural.dir/main.c.o CMakeFiles/Procedural.dir/render.c.o CMakeFiles/Procedural.dir/logic.c.o CMakeFiles/Procedural.dir/game.c.o -o Procedural  -lSDL2main -lSDL2 -lSDL2_gfx 
